@@ -80,10 +80,10 @@ Nếu hệ điều hành bật "giảm chuyển động", thanh progress tắt h
 - **Dark mode**: class `.dark` trên `<html>`, lần đầu vào lấy theo cài đặt hệ điều hành, sau đó nhớ lựa chọn của người dùng.
 - **Projects data-driven**: dữ liệu nằm trong `src/data/projects.ts`, render bằng `.map()`, tìm theo tên kết hợp lọc theo tag. Dự án chưa có demo hiện nút khoá kèm ghi chú "Chưa triển khai".
 - **Contact form**: validate bắt buộc 4 trường, kiểm tra định dạng email, nội dung tối thiểu 20 ký tự; có trạng thái loading, disable nút khi đang gửi và thông báo thành công (chưa có backend nên giả lập bằng `setTimeout`).
-- **Responsive**: mobile < 768px (menu hamburger), tablet 768–1024px, desktop > 1024px.
+- **Responsive**: mobile < 768px (menu hamburger), tablet 768-1024px, desktop > 1024px.
 - **Accessibility**: HTML semantic, mỗi trang một `<h1>`, ảnh có `alt`, form có `<label htmlFor>` và `aria-describedby` cho lỗi, tab chuyển bằng phím mũi tên, menu mobile đóng bằng `Escape`, có link "bỏ qua tới nội dung chính".
 - **Hero banner động**: nền gradient cyan→indigo→tím tự trôi qua lại, viền sóng SVG chạy vòng lặp liền mạch (`WaveDivider`), đoạn giới thiệu gõ từng ký tự trong 10 giây, dừng 5 giây cho người đọc, xoá rồi nghỉ 1 giây và lặp lại (`TypingText`); tốc độ tính theo độ dài câu nên bản tiếng Việt và tiếng Anh gõ xong cùng lúc, và bản đầy đủ luôn nằm trong DOM cho trình đọc màn hình.
-- **Tối ưu**: ảnh thumbnail nén còn 40–50 KB, dùng `loading="lazy"`, không kéo thêm thư viện icon (icon viết tay bằng SVG inline).
+- **Tối ưu**: ảnh thumbnail nén còn 40-50 KB, dùng `loading="lazy"`, không kéo thêm thư viện icon (icon viết tay bằng SVG inline).
 
 ## Deploy
 

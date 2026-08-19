@@ -63,7 +63,7 @@ export const education: EducationEntry[] = [
       en: 'Computer Networks and Data Communications',
     },
     gpa: '8.0 / 10',
-    period: '09/2020 – 06/2025',
+    period: '09/2020 - 06/2025',
     notes: {
       vi: ['Tiếng Anh: TOEIC 765'],
       en: ['English: TOEIC 765'],
@@ -79,7 +79,7 @@ export const experiences: TimelineEntry[] = [
       en: 'Kien Tre Education Investment JSC',
     },
     role: { vi: 'Fullstack Developer', en: 'Fullstack Developer' },
-    period: '03/2026 – 08/2026',
+    period: '03/2026 - 08/2026',
     bullets: {
       vi: [
         'Làm trọn 5 module backend trong codebase của nhóm cho hệ thống ERP xếp lịch phục vụ hơn 150 người dùng nội bộ: chốt yêu cầu trực tiếp với business analyst, thiết kế schema và hợp đồng API, code bằng NestJS kèm màn hình Next.js + shadcn/ui tương ứng, rồi debug khi chạy thật.',
@@ -104,7 +104,7 @@ export const experiences: TimelineEntry[] = [
       en: 'Viet Tri Dao Co., Ltd',
     },
     role: { vi: 'Fullstack Developer Intern', en: 'Fullstack Developer Intern' },
-    period: '08/2025 – 01/2026',
+    period: '08/2025 - 01/2026',
     bullets: {
       vi: [
         'Xây tầng quản lý hồ sơ cho một văn phòng công chứng ở Mỹ bằng Express.js, React và MongoDB: lưu file trên S3 kèm phân quyền theo từng hồ sơ, quy định bên nào được xem hay được thao tác trên hồ sơ nào.',
