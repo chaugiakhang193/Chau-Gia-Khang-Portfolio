@@ -4,15 +4,11 @@
 
 A CV as a single page application: 5 pages, Vietnamese/English content, dark mode and two page transitions.
 
-**Demo:** <https://portfolio-pks-tech-edu.vercel.app>
+**Demo:** <https://chau-gia-khang-portfolio.vercel.app>
 
 ## Screens
 
-| Home - dark theme | Resume - light theme |
-| --- | --- |
-| ![Home page with the gradient hero banner and avatar](docs/screenshots/home-desktop.jpg) | ![Resume page with personal details and career objective](docs/screenshots/resume-desktop.jpg) |
-| **Project details in a dialog** | **Navigation menu on mobile** |
-| ![Chat Service project dialog open over the projects page](docs/screenshots/projects-modal.jpg) | ![Hamburger menu open on a small screen](docs/screenshots/mobile-menu.png) |
+![Chat Service project dialog open over the projects page](docs/screenshots/projects-modal.jpg)
 
 ## Tech stack
 

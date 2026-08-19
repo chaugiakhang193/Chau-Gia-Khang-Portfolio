@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://portfolio-pks-tech-edu.vercel.app/sitemap.xml
+Sitemap: https://chau-gia-khang-portfolio.vercel.app/sitemap.xml

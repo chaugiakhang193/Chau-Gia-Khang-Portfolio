@@ -4,15 +4,11 @@
 
 CV dạng website (single page application) với 5 trang, song ngữ Việt/Anh, dark mode và hai hiệu ứng chuyển trang.
 
-**Demo:** <https://portfolio-pks-tech-edu.vercel.app>
+**Demo:** <https://chau-gia-khang-portfolio.vercel.app>
 
 ## Giao diện
 
-| Trang chủ - giao diện tối | Hồ sơ chi tiết - giao diện sáng |
-| --- | --- |
-| ![Trang chủ với hero banner gradient và ảnh đại diện](docs/screenshots/home-desktop.jpg) | ![Trang hồ sơ với thông tin cá nhân và mục tiêu nghề nghiệp](docs/screenshots/resume-desktop.jpg) |
-| **Chi tiết dự án trong hộp thoại** | **Menu điều hướng ở khổ mobile** |
-| ![Hộp thoại chi tiết dự án Chat Service mở đè lên trang Dự án](docs/screenshots/projects-modal.jpg) | ![Menu hamburger đang mở trên màn hình nhỏ](docs/screenshots/mobile-menu.png) |
+![Hộp thoại chi tiết dự án Chat Service mở đè lên trang Dự án](docs/screenshots/projects-modal.jpg)
 
 ## Công nghệ
 
