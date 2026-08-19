@@ -8,7 +8,11 @@ A CV as a single page application: 5 pages, Vietnamese/English content, dark mod
 
 ## Screens
 
-![Chat Service project dialog open over the projects page](docs/screenshots/projects-modal.jpg)
+| Home | Resume |
+| --- | --- |
+| ![Home page with the gradient hero banner and avatar](docs/screenshots/home-desktop.jpg) | ![Resume page with personal details and career objective](docs/screenshots/resume-desktop.jpg) |
+| **Project details in a dialog** | **Navigation menu on mobile** |
+| ![Chat Service project dialog open over the projects page](docs/screenshots/projects-modal.jpg) | ![Hamburger menu open on a small screen](docs/screenshots/mobile-menu.png) |
 
 ## Tech stack
 
