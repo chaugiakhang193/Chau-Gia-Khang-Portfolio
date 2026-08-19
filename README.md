@@ -4,7 +4,7 @@
 
 CV dạng website (single page application) với 5 trang, song ngữ Việt/Anh, dark mode và hai hiệu ứng chuyển trang.
 
-**Demo:** <https://porfolio-pks-tech-edu.vercel.app>
+**Demo:** <https://portfolio-pks-tech-edu.vercel.app>
 
 ## Giao diện
 

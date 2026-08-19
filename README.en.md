@@ -4,7 +4,7 @@
 
 A CV as a single page application: 5 pages, Vietnamese/English content, dark mode and two page transitions.
 
-**Demo:** <https://porfolio-pks-tech-edu.vercel.app>
+**Demo:** <https://portfolio-pks-tech-edu.vercel.app>
 
 ## Screens
 
