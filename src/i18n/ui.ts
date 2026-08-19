@@ -101,7 +101,10 @@ export const ui = {
       vi: "Ví dụ: search, chat...",
       en: "e.g. search, chat...",
     },
-    filterLabel: { vi: "Lọc theo công nghệ", en: "Filter by technology" },
+    filterLabel: {
+      vi: "Lọc theo công nghệ (chọn được nhiều)",
+      en: "Filter by technology (multi-select)",
+    },
     all: { vi: "Tất cả", en: "All" },
     clearFilters: { vi: "Xoá bộ lọc", en: "Clear filters" },
     count: { vi: "dự án phù hợp", en: "matching projects" },

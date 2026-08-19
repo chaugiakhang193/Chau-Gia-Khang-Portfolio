@@ -12,7 +12,7 @@ import type { Project } from '../types'
 export function Projects() {
   const { t, lang } = useLanguage()
   const [query, setQuery] = useState('')
-  const [activeTag, setActiveTag] = useState<string | null>(null)
+  const [activeTags, setActiveTags] = useState<string[]>([])
   const [detailProject, setDetailProject] = useState<Project | null>(null)
 
   const visibleProjects = useMemo(() => {
@@ -21,13 +21,17 @@ export function Projects() {
     return projects.filter((project) => {
       const matchesQuery =
         !normalizedQuery || project.name[lang].toLowerCase().includes(normalizedQuery)
-      const matchesTag = !activeTag || project.tags.includes(activeTag)
+      // Chon nhieu tag thi du an phai co du tat ca, khong phai co mot cai la dat
+      const matchesTags = activeTags.every((tag) => project.tags.includes(tag))
 
-      return matchesQuery && matchesTag
+      return matchesQuery && matchesTags
     })
-  }, [query, activeTag, lang])
+  }, [query, activeTags, lang])
 
-  const hasFilters = query.trim() !== '' || activeTag !== null
+  const hasFilters = query.trim() !== '' || activeTags.length > 0
+
+  const toggleTag = (tag: string) =>
+    setActiveTags((prev) => (prev.includes(tag) ? prev.filter((item) => item !== tag) : [...prev, tag]))
 
   return (
     <>
@@ -62,10 +66,10 @@ export function Projects() {
               <div className="mt-2 flex flex-wrap gap-2">
                 <button
                   type="button"
-                  onClick={() => setActiveTag(null)}
-                  aria-pressed={activeTag === null}
+                  onClick={() => setActiveTags([])}
+                  aria-pressed={activeTags.length === 0}
                   className={
-                    activeTag === null
+                    activeTags.length === 0
                       ? 'rounded-full bg-sky-700 px-3.5 py-1.5 text-xs font-semibold text-white'
                       : 'rounded-full border border-zinc-300 px-3.5 py-1.5 text-xs font-medium text-zinc-600 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800'
                   }
@@ -77,10 +81,10 @@ export function Projects() {
                   <button
                     key={tag}
                     type="button"
-                    onClick={() => setActiveTag((prev) => (prev === tag ? null : tag))}
-                    aria-pressed={activeTag === tag}
+                    onClick={() => toggleTag(tag)}
+                    aria-pressed={activeTags.includes(tag)}
                     className={
-                      activeTag === tag
+                      activeTags.includes(tag)
                         ? 'rounded-full bg-sky-700 px-3.5 py-1.5 text-xs font-semibold text-white'
                         : 'rounded-full border border-zinc-300 px-3.5 py-1.5 text-xs font-medium text-zinc-600 transition-colors hover:bg-zinc-100 dark:border-zinc-700 dark:text-zinc-300 dark:hover:bg-zinc-800'
                     }
@@ -104,7 +108,7 @@ export function Projects() {
                   type="button"
                   onClick={() => {
                     setQuery('')
-                    setActiveTag(null)
+                    setActiveTags([])
                   }}
                   className="text-sm font-semibold text-sky-700 hover:underline dark:text-sky-400"
                 >

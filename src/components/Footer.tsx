@@ -9,7 +9,7 @@ export function Footer() {
 
   return (
     <footer className="border-t border-zinc-200 py-8 dark:border-zinc-800">
-      <div className="container-page flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+      <div className="container-page flex flex-col items-center gap-4 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left">
         <div>
           <p className="font-semibold text-zinc-900 dark:text-zinc-100">{profile.name}</p>
           <p className="mt-1 text-sm">{t(ui.footer.built)}</p>
