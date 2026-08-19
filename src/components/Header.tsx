@@ -2,7 +2,6 @@ import { AnimatePresence, motion } from 'framer-motion'
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import { navItems } from '../data/nav'
-import { profile } from '../data/profile'
 import { useLanguage } from '../hooks/useLanguage'
 import { ui } from '../i18n/ui'
 import { CloseIcon, MenuIcon } from './icons'
@@ -43,15 +42,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-zinc-200 bg-zinc-50/85 backdrop-blur dark:border-zinc-800 dark:bg-zinc-950/85">
       <div className="container-page flex h-16 items-center justify-between gap-4">
-        <NavLink
-          to="/"
-          aria-label={profile.name}
-          className="flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-cyan-500 to-indigo-600 text-xs font-bold text-white"
-        >
-          GK
-        </NavLink>
-
-        <nav aria-label={t(ui.common.mainNav)} className="hidden items-center gap-1 md:flex">
+        <nav aria-label={t(ui.common.mainNav)} className="-ml-3 hidden items-center gap-1 md:flex">
           {navItems.map((item) => (
             <NavLink key={item.to} to={item.to} end={item.to === '/'} className={navLinkClass}>
               {t(item.label)}
