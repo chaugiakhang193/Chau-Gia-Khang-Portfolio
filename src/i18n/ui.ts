@@ -13,7 +13,7 @@ export const ui = {
     toLight: { vi: "Chuyển sang giao diện sáng", en: "Switch to light theme" },
     toDark: { vi: "Chuyển sang giao diện tối", en: "Switch to dark theme" },
     /* Chuoi vi hien khi dang o ban VI (hanh dong: sang EN), chuoi en hien khi dang o ban EN
-       (hanh dong: ve VI) — cung co che voi toLight/toDark ben duoi */
+       (hanh dong: ve VI) - cung co che voi toLight/toDark ben duoi */
     switchLang: { vi: "Chuyển sang bản tiếng Anh", en: "Switch to Vietnamese" },
     backToTop: { vi: "Lên đầu trang", en: "Back to top" },
     email: { vi: "Email", en: "Email" },

@@ -13,8 +13,8 @@ export const profile = {
     en: 'Frontend Developer Intern',
   } satisfies Localized,
   tagline: {
-    vi: 'Mình làm frontend React/Next.js chạy production với SSR — và đủ sức fullstack: TypeScript · NestJS · Golang, một năm kinh nghiệm đi làm cùng một sàn thương mại điện tử tự viết đang chạy production.',
-    en: 'I build production React/Next.js with SSR — with fullstack range behind it: TypeScript · NestJS · Golang, one year of professional experience and a self-built marketplace running in production.',
+    vi: 'Mình làm frontend React/Next.js chạy production với SSR - và đủ sức fullstack: TypeScript · NestJS · Golang, một năm kinh nghiệm đi làm cùng một sàn thương mại điện tử tự viết đang chạy production.',
+    en: 'I build production React/Next.js with SSR - with fullstack range behind it: TypeScript · NestJS · Golang, one year of professional experience and a self-built marketplace running in production.',
   } satisfies Localized,
   personal: {
     dob: '19/03/2002',
@@ -28,15 +28,15 @@ export const profile = {
   cvUrl: null as string | null,
   objective: {
     vi: [
-      'Mình ứng tuyển vị trí Thực tập sinh Frontend — muốn đầu tư sâu hơn vào React/Next.js trên nền tảng fullstack sẵn có (TypeScript/NestJS, Golang).',
-      'Phía frontend mình đã làm React/Next.js chạy production với SSR, TanStack Query và Zustand — chính website CV này cũng là React + TypeScript + Tailwind mình tự dựng.',
+      'Mình ứng tuyển vị trí Thực tập sinh Frontend - muốn đầu tư sâu hơn vào React/Next.js trên nền tảng fullstack sẵn có (TypeScript/NestJS, Golang).',
+      'Phía frontend mình đã làm React/Next.js chạy production với SSR, TanStack Query và Zustand - chính website CV này cũng là React + TypeScript + Tailwind mình tự dựng.',
       'Mình quen nhận trọn một tính năng từ đầu tới cuối: chốt yêu cầu với bộ phận nghiệp vụ, thiết kế API và mô hình dữ liệu, code, viết test rồi debug khi hệ thống chạy thật.',
       'Phần mình đào sâu nhất là backend bất đồng bộ nhiều service: transactional outbox, consumer idempotent có dedup và DLQ, CQRS read projection, tracing xuyên qua hàng đợi.',
       'Mục tiêu một năm tới: vững hơn về hệ thống phân tán và kiểm thử tự động, đủ sức nhận trọn một domain nghiệp vụ.',
     ],
     en: [
-      'I am applying for a Frontend Intern position — aiming to go deeper on React/Next.js, on top of an existing fullstack foundation (TypeScript/NestJS, Golang).',
-      'On the frontend I have shipped production React/Next.js with SSR, TanStack Query and Zustand — this CV site itself is React + TypeScript + Tailwind I built from scratch.',
+      'I am applying for a Frontend Intern position - aiming to go deeper on React/Next.js, on top of an existing fullstack foundation (TypeScript/NestJS, Golang).',
+      'On the frontend I have shipped production React/Next.js with SSR, TanStack Query and Zustand - this CV site itself is React + TypeScript + Tailwind I built from scratch.',
       'I am comfortable owning a feature end to end: clarifying requirements with business analysts, designing the API and data model, implementing, testing and debugging it in production.',
       'What I have gone deepest on is asynchronous multi-service backends: transactional outbox, idempotent consumers with dedup and DLQ, CQRS read projections, and tracing that survives an async boundary.',
       'Goal for the next year: get stronger at distributed systems and automated testing, enough to own a whole business domain.',
@@ -55,8 +55,8 @@ export const education: EducationEntry[] = [
   {
     id: 'uit',
     school: {
-      vi: 'Trường Đại học Công nghệ Thông tin — ĐHQG-HCM (UIT)',
-      en: 'University of Information Technology — VNU-HCM (UIT)',
+      vi: 'Trường Đại học Công nghệ Thông tin - ĐHQG-HCM (UIT)',
+      en: 'University of Information Technology - VNU-HCM (UIT)',
     },
     major: {
       vi: 'Mạng máy tính và Truyền thông dữ liệu',

@@ -1,4 +1,4 @@
-# Website CV cá nhân — Châu Gia Khang
+# Website CV cá nhân - Châu Gia Khang
 
 CV dạng website (single page application) với 5 trang, song ngữ Việt/Anh, dark mode và hai hiệu ứng chuyển trang.
 
@@ -47,7 +47,7 @@ src/
 ├── context/           ThemeProvider (dark mode) và LanguageProvider (VI/EN)
 ├── data/              nội dung CV: profile, skills, projects, nav
 ├── hooks/             useLanguage, useTheme, useContactForm, useScrollTrigger
-├── i18n/              ui.ts — toàn bộ chuỗi giao diện song ngữ
+├── i18n/              ui.ts - toàn bộ chuỗi giao diện song ngữ
 ├── pages/             Home, Resume, Skills, Projects, Contact, NotFound
 ├── types.ts           kiểu dùng chung, gồm Localized<T>
 ├── App.tsx            khai báo route + AnimatePresence
@@ -69,8 +69,8 @@ Nội dung CV tách hẳn khỏi giao diện: sửa `src/data/*` là đổi đư
 
 ## Hiệu ứng chuyển trang
 
-1. **Fade + trượt dọc** (`src/components/PageTransition.tsx`) — trang cũ mờ đi và trượt lên, trang mới hiện lên từ dưới. Chạy nhờ `AnimatePresence mode="wait"` trong `App.tsx`.
-2. **Thanh progress gradient** (`src/components/RouteProgress.tsx`) — thanh cyan→indigo→tím chạy ngang mép trên màn hình mỗi lần đổi route.
+1. **Fade + trượt dọc** (`src/components/PageTransition.tsx`) - trang cũ mờ đi và trượt lên, trang mới hiện lên từ dưới. Chạy nhờ `AnimatePresence mode="wait"` trong `App.tsx`.
+2. **Thanh progress gradient** (`src/components/RouteProgress.tsx`) - thanh cyan→indigo→tím chạy ngang mép trên màn hình mỗi lần đổi route.
 
 Nếu hệ điều hành bật "giảm chuyển động", thanh progress tắt hẳn và fade rút ngắn lại.
 

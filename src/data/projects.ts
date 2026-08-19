@@ -151,8 +151,8 @@ export const projects: Project[] = [
     demo: null,
     docs: null,
     demoNote: {
-      vi: 'Đang phát triển — đã có mã nguồn nhưng chưa deploy vì còn đang test lỗi',
-      en: 'In development — source code is available but not deployed yet, still being tested',
+      vi: 'Đang phát triển - đã có mã nguồn nhưng chưa deploy vì còn đang test lỗi',
+      en: 'In development - source code is available but not deployed yet, still being tested',
     },
   },
 ]

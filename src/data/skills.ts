@@ -127,8 +127,8 @@ export const languageSkills: LanguageSkill[] = [
   {
     name: { vi: 'Tiếng Anh', en: 'English' },
     detail: {
-      vi: 'TOEIC 765 — đọc hiểu tài liệu kỹ thuật tốt, giao tiếp công việc cơ bản',
-      en: 'TOEIC 765 — comfortable reading technical documentation, working-level communication',
+      vi: 'TOEIC 765 - đọc hiểu tài liệu kỹ thuật tốt, giao tiếp công việc cơ bản',
+      en: 'TOEIC 765 - comfortable reading technical documentation, working-level communication',
     },
   },
 ]
