@@ -13,7 +13,7 @@ export const profile = {
     en: 'Fullstack Developer',
   } satisfies Localized,
   tagline: {
-    vi: 'Fullstack developer mạnh nhất ở backend (TypeScript · NestJS · Golang), một năm kinh nghiệm với hệ thống ERP xếp lịch và hệ quản lý hồ sơ, cộng một sàn thương mại điện tử tự viết đang chạy production.',
+    vi: 'Fullstack developer, sở trường backend (TypeScript · NestJS · Golang), một năm kinh nghiệm với hệ thống ERP xếp lịch và hệ quản lý hồ sơ, cộng một sàn thương mại điện tử tự viết đang chạy production.',
     en: 'Fullstack developer, strongest on backend (TypeScript · NestJS · Golang), with one year of professional experience on an ERP scheduling platform and a document-management system, plus a marketplace of my own running in production.',
   } satisfies Localized,
   personal: {
