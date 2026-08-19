@@ -45,9 +45,9 @@ export function Header() {
       <div className="container-page flex h-16 items-center justify-between gap-4">
         <NavLink
           to="/"
-          className="flex items-center gap-2 text-base font-bold text-zinc-900 dark:text-zinc-50"
+          className="flex items-center gap-2 text-sm font-semibold text-zinc-800 dark:text-zinc-100"
         >
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-linear-to-br from-cyan-500 to-indigo-600 text-sm font-bold text-white">
+          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-cyan-500 to-indigo-600 text-xs font-bold text-white">
             GK
           </span>
           <span className="hidden sm:inline">{profile.name}</span>
