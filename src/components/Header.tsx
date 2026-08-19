@@ -45,12 +45,10 @@ export function Header() {
       <div className="container-page flex h-16 items-center justify-between gap-4">
         <NavLink
           to="/"
-          className="flex items-center gap-2 text-sm font-semibold text-zinc-800 dark:text-zinc-100"
+          aria-label={profile.name}
+          className="flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-cyan-500 to-indigo-600 text-xs font-bold text-white"
         >
-          <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-linear-to-br from-cyan-500 to-indigo-600 text-xs font-bold text-white">
-            GK
-          </span>
-          <span className="hidden sm:inline">{profile.name}</span>
+          GK
         </NavLink>
 
         <nav aria-label={t(ui.common.mainNav)} className="hidden items-center gap-1 md:flex">
