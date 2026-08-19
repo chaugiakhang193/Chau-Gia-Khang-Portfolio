@@ -135,8 +135,8 @@ export const ui = {
     emailPlaceholder: { vi: "ten@congty.com", en: "you@company.com" },
     subject: { vi: "Tiêu đề", en: "Subject" },
     subjectPlaceholder: {
-      vi: "Cơ hội Thực tập sinh Frontend",
-      en: "Frontend internship opportunity",
+      vi: "Cơ hội việc làm Fullstack",
+      en: "Fullstack role opportunity",
     },
     message: { vi: "Nội dung", en: "Message" },
     messagePlaceholder: {
