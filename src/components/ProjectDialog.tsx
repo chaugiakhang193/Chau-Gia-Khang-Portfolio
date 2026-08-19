@@ -51,32 +51,30 @@ export function ProjectDialog({ project, onClose }: ProjectDialogProps) {
       className="m-auto w-[min(42rem,92vw)] rounded-2xl border border-zinc-200 bg-white p-0 text-zinc-700 backdrop:bg-black/60 dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-300"
     >
       <div className="max-h-[85vh] overflow-y-auto">
-        <img
-          src={project.thumbnail}
-          alt={t(project.thumbnailAlt)}
-          className="aspect-16/9 w-full border-b border-zinc-200 object-cover dark:border-zinc-800"
-        />
+        <div className="relative">
+          <img
+            src={project.thumbnail}
+            alt={t(project.thumbnailAlt)}
+            className="aspect-16/9 w-full border-b border-zinc-200 object-cover dark:border-zinc-800"
+          />
+
+          {/* Nam de len goc anh: khong chen cho tieu de, va la cho mat nguoi ta tim dau tien */}
+          <button
+            type="button"
+            onClick={onClose}
+            className="absolute top-3 right-3 flex items-center gap-1.5 rounded-full bg-black/50 px-2.5 py-1.5 text-xs font-medium text-white backdrop-blur-sm transition-colors hover:bg-black/70"
+            aria-label={t(ui.projects.close)}
+          >
+            <kbd className="hidden font-sans sm:inline">Esc</kbd>
+            <CloseIcon className="h-4 w-4" />
+          </button>
+        </div>
 
         <div className="p-5 sm:p-6">
-          <div className="flex items-start justify-between gap-4">
-            <div>
-              <h2 id="project-dialog-title" className="text-xl sm:text-2xl">
-                {t(project.name)}
-              </h2>
-              <p className="mt-1 text-sm text-muted">{project.year}</p>
-            </div>
-
-            {/* Nut dong de nhe: khong vien, chi hien nen khi ro chuot hoac focus */}
-            <button
-              type="button"
-              onClick={onClose}
-              className="-mt-1 -mr-1 flex shrink-0 items-center gap-1.5 rounded-full px-2.5 py-1.5 text-xs font-medium text-zinc-500 transition-colors hover:bg-zinc-100 hover:text-zinc-700 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-200"
-              aria-label={t(ui.projects.close)}
-            >
-              <kbd className="hidden font-sans sm:inline">Esc</kbd>
-              <CloseIcon className="h-4 w-4" />
-            </button>
-          </div>
+          <h2 id="project-dialog-title" className="text-xl sm:text-2xl">
+            {t(project.name)}
+          </h2>
+          <p className="mt-1 text-sm text-muted">{project.year}</p>
 
           <p className="mt-4 text-sm leading-relaxed">{t(project.summary)}</p>
 
