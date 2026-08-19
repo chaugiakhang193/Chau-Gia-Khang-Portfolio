@@ -4,6 +4,12 @@ CV dạng website (single page application) với 5 trang, song ngữ Việt/Anh
 
 **Demo:** _(cập nhật link sau khi deploy)_
 
+## Giao diện
+
+| Trang chủ (desktop) | Hồ sơ chi tiết (desktop) |
+| --- | --- |
+| ![Trang chủ với hero banner gradient và ảnh đại diện](docs/screenshots/home-desktop.jpg) | ![Trang hồ sơ với thông tin cá nhân và mục tiêu nghề nghiệp](docs/screenshots/resume-desktop.jpg) |
+
 ## Công nghệ
 
 | Thành phần | Lựa chọn |

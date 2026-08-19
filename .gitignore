@@ -23,8 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Tai lieu ke hoach noi bo, khong day len repo
-task_*.md
-
 # Anh avatar goc giu lai de crop khi can, khong duoc import nen khong vao ban build
 src/assets/avatar-original.jpg
