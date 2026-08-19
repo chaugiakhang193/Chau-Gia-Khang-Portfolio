@@ -119,7 +119,7 @@ export function Projects() {
           </div>
 
           {visibleProjects.length > 0 ? (
-            <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-8 grid gap-6 md:grid-cols-2">
               <AnimatePresence mode="popLayout">
                 {visibleProjects.map((project) => (
                   <ProjectCard
