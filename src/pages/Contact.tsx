@@ -3,7 +3,7 @@ import { PageHeader } from '../components/PageHeader'
 import { Reveal } from '../components/Reveal'
 import { CheckIcon, GithubIcon, MailIcon, MapPinIcon, PhoneIcon, SpinnerIcon } from '../components/icons'
 import { profile } from '../data/profile'
-import { MESSAGE_MIN_LENGTH, useContactForm, type ContactField } from '../hooks/useContactForm'
+import { useContactForm, type ContactField } from '../hooks/useContactForm'
 import { useLanguage } from '../hooks/useLanguage'
 import { ui } from '../i18n/ui'
 
@@ -191,7 +191,7 @@ export function Contact() {
                         {t(ui.contact.message)}
                       </label>
                       <span className="text-xs text-muted">
-                        {values.message.trim().length}/{MESSAGE_MIN_LENGTH} {t(ui.contact.charCount)}
+                        {values.message.trim().length} {t(ui.contact.charCount)}
                       </span>
                     </div>
                     <textarea
