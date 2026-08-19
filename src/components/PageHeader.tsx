@@ -1,10 +1,15 @@
 export function PageHeader({ title, subtitle }: { title: string; subtitle?: string }) {
   return (
-    <div className="border-b border-zinc-200 bg-white py-10 sm:py-12 dark:border-zinc-800 dark:bg-zinc-900">
-      <div className="container-page">
-        <h1 className="text-gradient pb-1 text-3xl sm:text-4xl">{title}</h1>
-        {subtitle && <p className="mt-3 max-w-2xl text-base sm:text-lg">{subtitle}</p>}
-      </div>
+    <div className="container-page pt-10 sm:pt-12">
+      {/* Vach gradient nho thay cho ca mot dai nen rieng: nhan manh du nhung khong chiem cho */}
+      <span
+        className="block h-1 w-10 rounded-full bg-linear-to-r from-cyan-500 to-indigo-500"
+        aria-hidden="true"
+      />
+
+      <h1 className="text-gradient mt-4 pb-1 text-2xl sm:text-3xl">{title}</h1>
+
+      {subtitle && <p className="mt-2 max-w-2xl text-sm sm:text-base">{subtitle}</p>}
     </div>
   )
 }
