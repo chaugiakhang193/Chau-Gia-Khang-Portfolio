@@ -6,7 +6,6 @@ import {
   CalendarIcon,
   MailIcon,
   MapPinIcon,
-  PhoneIcon,
   UserIcon,
 } from '../components/icons'
 import { activities, education, experiences, profile } from '../data/profile'
@@ -36,13 +35,6 @@ export function Resume() {
       label: t(ui.common.email),
       value: profile.personal.email,
       href: `mailto:${profile.personal.email}`,
-    },
-    {
-      id: 'phone',
-      icon: PhoneIcon,
-      label: t(ui.common.phone),
-      value: profile.personal.phone,
-      href: `tel:${profile.personal.phone.replace(/\s/g, '')}`,
     },
   ]
 

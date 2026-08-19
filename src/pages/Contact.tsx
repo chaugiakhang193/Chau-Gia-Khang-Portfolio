@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { PageHeader } from '../components/PageHeader'
 import { Reveal } from '../components/Reveal'
-import { CheckIcon, GithubIcon, MailIcon, MapPinIcon, PhoneIcon, SpinnerIcon } from '../components/icons'
+import { CheckIcon, GithubIcon, MailIcon, MapPinIcon, SpinnerIcon } from '../components/icons'
 import { profile } from '../data/profile'
 import { useContactForm, type ContactField } from '../hooks/useContactForm'
 import { useLanguage } from '../hooks/useLanguage'
@@ -20,13 +20,6 @@ export function Contact() {
       label: t(ui.common.email),
       value: profile.personal.email,
       href: `mailto:${profile.personal.email}`,
-    },
-    {
-      id: 'phone',
-      icon: PhoneIcon,
-      label: t(ui.common.phone),
-      value: profile.personal.phone,
-      href: `tel:${profile.personal.phone.replace(/\s/g, '')}`,
     },
     {
       id: 'github',

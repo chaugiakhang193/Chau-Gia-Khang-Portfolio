@@ -9,35 +9,34 @@ export const profile = {
     en: 'Portrait photo of Chau Gia Khang',
   } satisfies Localized,
   title: {
-    vi: 'Thực tập sinh Frontend',
-    en: 'Frontend Developer Intern',
+    vi: 'Fullstack Developer',
+    en: 'Fullstack Developer',
   } satisfies Localized,
   tagline: {
-    vi: 'Mình làm frontend React/Next.js chạy production với SSR - và đủ sức fullstack: TypeScript · NestJS · Golang, một năm kinh nghiệm đi làm cùng một sàn thương mại điện tử tự viết đang chạy production.',
-    en: 'I build production React/Next.js with SSR - with fullstack range behind it: TypeScript · NestJS · Golang, one year of professional experience and a self-built marketplace running in production.',
+    vi: 'Fullstack developer mạnh nhất ở backend (TypeScript · NestJS · Golang), một năm kinh nghiệm với hệ thống ERP xếp lịch và hệ quản lý hồ sơ, cộng một sàn thương mại điện tử tự viết đang chạy production.',
+    en: 'Fullstack developer, strongest on backend (TypeScript · NestJS · Golang), with one year of professional experience on an ERP scheduling platform and a document-management system, plus a marketplace of my own running in production.',
   } satisfies Localized,
   personal: {
     dob: '19/03/2002',
     gender: { vi: 'Nam', en: 'Male' } satisfies Localized,
     location: { vi: 'TP. Hồ Chí Minh', en: 'Ho Chi Minh City' } satisfies Localized,
     email: 'chaugiakhang193@gmail.com',
-    phone: '088 66 13 004',
+    // De trong thi cac trang khong hien so dien thoai, tranh bot quet de spam
+    phone: null as string | null,
     github: 'https://github.com/chaugiakhang193',
   },
   /** Duong dan file CV PDF trong thu muc public. Co gia tri thi nut "Tai CV" moi hien. */
   cvUrl: null as string | null,
   objective: {
     vi: [
-      'Mình ứng tuyển vị trí Thực tập sinh Frontend - muốn đầu tư sâu hơn vào React/Next.js trên nền tảng fullstack sẵn có (TypeScript/NestJS, Golang).',
-      'Phía frontend mình đã làm React/Next.js chạy production với SSR, TanStack Query và Zustand - chính website CV này cũng là React + TypeScript + Tailwind mình tự dựng.',
       'Mình quen nhận trọn một tính năng từ đầu tới cuối: chốt yêu cầu với bộ phận nghiệp vụ, thiết kế API và mô hình dữ liệu, code, viết test rồi debug khi hệ thống chạy thật.',
+      'Phía frontend mình làm React/Next.js chạy production với SSR, TanStack Query và Zustand.',
       'Phần mình đào sâu nhất là backend bất đồng bộ nhiều service: transactional outbox, consumer idempotent có dedup và DLQ, CQRS read projection, tracing xuyên qua hàng đợi.',
       'Mục tiêu một năm tới: vững hơn về hệ thống phân tán và kiểm thử tự động, đủ sức nhận trọn một domain nghiệp vụ.',
     ],
     en: [
-      'I am applying for a Frontend Intern position - aiming to go deeper on React/Next.js, on top of an existing fullstack foundation (TypeScript/NestJS, Golang).',
-      'On the frontend I have shipped production React/Next.js with SSR, TanStack Query and Zustand - this CV site itself is React + TypeScript + Tailwind I built from scratch.',
       'I am comfortable owning a feature end to end: clarifying requirements with business analysts, designing the API and data model, implementing, testing and debugging it in production.',
+      'On the frontend I build production React/Next.js with SSR, TanStack Query and Zustand.',
       'What I have gone deepest on is asynchronous multi-service backends: transactional outbox, idempotent consumers with dedup and DLQ, CQRS read projections, and tracing that survives an async boundary.',
       'Goal for the next year: get stronger at distributed systems and automated testing, enough to own a whole business domain.',
     ],

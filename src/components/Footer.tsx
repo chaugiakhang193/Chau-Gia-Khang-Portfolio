@@ -1,7 +1,7 @@
 import { profile } from '../data/profile'
 import { useLanguage } from '../hooks/useLanguage'
 import { ui } from '../i18n/ui'
-import { GithubIcon, MailIcon, PhoneIcon } from './icons'
+import { GithubIcon, MailIcon } from './icons'
 
 export function Footer() {
   const { t } = useLanguage()
@@ -26,15 +26,6 @@ export function Footer() {
               aria-label={`${t(ui.common.email)}: ${profile.personal.email}`}
             >
               <MailIcon className="h-5 w-5" />
-            </a>
-          </li>
-          <li>
-            <a
-              href={`tel:${profile.personal.phone.replace(/\s/g, '')}`}
-              className="icon-btn"
-              aria-label={`${t(ui.common.phone)}: ${profile.personal.phone}`}
-            >
-              <PhoneIcon className="h-5 w-5" />
             </a>
           </li>
           <li>
