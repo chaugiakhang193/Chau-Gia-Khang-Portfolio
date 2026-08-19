@@ -33,39 +33,37 @@ export function Home() {
               className="mt-5 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg"
             />
 
-            <div className="mt-8 w-fit">
-              <div className="flex flex-wrap gap-3">
-                <Link to="/resume" className="btn btn-on-banner">
-                  {t(ui.home.ctaResume)}
-                  <ArrowRightIcon className="h-4 w-4" />
-                </Link>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link to="/resume" className="btn btn-on-banner">
+                {t(ui.home.ctaResume)}
+                <ArrowRightIcon className="h-4 w-4" />
+              </Link>
 
-                <Link to="/projects" className="btn btn-on-banner-ghost">
-                  {t(ui.home.ctaProjects)}
-                </Link>
+              <Link to="/projects" className="btn btn-on-banner-ghost">
+                {t(ui.home.ctaProjects)}
+              </Link>
 
-                <Link to="/contact" className="btn btn-on-banner-ghost">
-                  <MailIcon className="h-4 w-4" />
-                  {t(ui.home.ctaContact)}
-                </Link>
+              <Link to="/contact" className="btn btn-on-banner-ghost">
+                <MailIcon className="h-4 w-4" />
+                {t(ui.home.ctaContact)}
+              </Link>
 
-                {profile.cvUrl && (
-                  <a href={profile.cvUrl} download className="btn btn-on-banner-ghost">
-                    <DownloadIcon className="h-4 w-4" />
-                    {t(ui.home.ctaDownload)}
-                  </a>
-                )}
-              </div>
-
-              <dl className="mt-10 flex flex-wrap justify-center gap-x-10 gap-y-4">
-                {profile.highlights.map((highlight) => (
-                  <div key={highlight.value + t(highlight.label)} className="text-center">
-                    <dt className="text-sm text-cyan-100">{t(highlight.label)}</dt>
-                    <dd className="text-2xl font-bold text-white">{highlight.value}</dd>
-                  </div>
-                ))}
-              </dl>
+              {profile.cvUrl && (
+                <a href={profile.cvUrl} download className="btn btn-on-banner-ghost">
+                  <DownloadIcon className="h-4 w-4" />
+                  {t(ui.home.ctaDownload)}
+                </a>
+              )}
             </div>
+
+            <dl className="mt-10 flex flex-wrap gap-x-10 gap-y-4">
+              {profile.highlights.map((highlight) => (
+                <div key={highlight.value + t(highlight.label)} className="text-center">
+                  <dt className="text-sm text-cyan-100">{t(highlight.label)}</dt>
+                  <dd className="text-2xl font-bold text-white">{highlight.value}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
 
           <motion.div
