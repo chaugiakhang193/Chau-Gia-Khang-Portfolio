@@ -64,12 +64,22 @@ export function TypingText({ phrases, loop = true, className }: TypingTextProps)
     return <p className={className}>{phrases[0]}</p>
   }
 
+  // Cau dai nhat quyet dinh chieu cao cua khoi
+  const longest = phrases.reduce((a, b) => (b.length > a.length ? b : a), '')
+
   return (
-    <p className={className}>
-      <span aria-hidden="true">
+    <p className={`relative ${className}`}>
+      {/* Cau day du de san o day nhung vo hinh: no giu cho san nen khi go toi dong cuoi
+          giao dien khong bi day xuong. Dat min-height co dinh se sai o mobile hoac khi doi ngon ngu. */}
+      <span className="invisible" aria-hidden="true">
+        {longest}
+      </span>
+
+      <span className="absolute inset-0" aria-hidden="true">
         {text}
         <span className="ml-0.5 inline-block h-[1em] w-0.5 animate-pulse bg-current align-text-bottom" />
       </span>
+
       {/* Trinh doc man hinh doc tron noi dung thay vi doc lai tung ky tu dang go */}
       <span className="sr-only">{phrases.join('. ')}</span>
     </p>

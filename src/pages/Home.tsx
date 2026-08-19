@@ -30,7 +30,7 @@ export function Home() {
 
             <TypingText
               phrases={[t(profile.tagline)]}
-              className="mt-5 min-h-24 max-w-xl text-base leading-relaxed text-white/90 sm:min-h-20 sm:text-lg"
+              className="mt-5 max-w-xl text-base leading-relaxed text-white/90 sm:text-lg"
             />
 
             <div className="mt-8 flex flex-wrap gap-3">
