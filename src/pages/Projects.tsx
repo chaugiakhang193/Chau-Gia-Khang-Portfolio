@@ -33,7 +33,7 @@ export function Projects() {
     <>
       <PageHeader title={t(ui.projects.title)} subtitle={t(ui.projects.subtitle)} />
 
-      <section className="page-section" aria-labelledby="projects-heading">
+      <section className="page-section pt-6 sm:pt-8" aria-labelledby="projects-heading">
         <div className="container-page">
           <h2 id="projects-heading" className="sr-only">
             {t(ui.projects.title)}

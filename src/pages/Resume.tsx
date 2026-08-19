@@ -98,7 +98,7 @@ export function Resume() {
     <>
       <PageHeader title={t(ui.resume.title)} subtitle={t(ui.resume.subtitle)} />
 
-      <section className="page-section" aria-labelledby="personal-heading">
+      <section className="page-section pt-6 sm:pt-8" aria-labelledby="personal-heading">
         <div className="container-page grid gap-6 lg:grid-cols-2">
           <Reveal>
             <div className="card h-full">

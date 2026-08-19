@@ -58,7 +58,7 @@ export function Contact() {
     <>
       <PageHeader title={t(ui.contact.title)} subtitle={t(ui.contact.subtitle)} />
 
-      <section className="page-section" aria-labelledby="contact-heading">
+      <section className="page-section pt-6 sm:pt-8" aria-labelledby="contact-heading">
         <div className="container-page grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.4fr)]">
           <Reveal>
             <div className="card h-full">

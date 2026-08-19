@@ -12,7 +12,7 @@ export function Skills() {
     <>
       <PageHeader title={t(ui.skills.title)} subtitle={t(ui.skills.subtitle)} />
 
-      <section className="page-section" aria-labelledby="technical-heading">
+      <section className="page-section pt-6 sm:pt-8" aria-labelledby="technical-heading">
         <div className="container-page">
           <h2 id="technical-heading" className="text-2xl">
             {t(ui.skills.technicalTitle)}
